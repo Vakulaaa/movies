@@ -13,3 +13,4 @@ lint:
 	echo "-code is formatted with black"
 	ruff . --fix
 	echo "-code is formatted with ruff"
+alias run="./ manage.py runserver"

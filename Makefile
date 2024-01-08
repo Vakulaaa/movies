@@ -14,4 +14,4 @@ lint:
 	ruff . --fix
 	echo "-code is formatted with ruff"
 run:
-    python manage.py runserver
+	python manage.py runserver

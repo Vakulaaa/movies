@@ -3,4 +3,4 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    birth_date = models.DateField("Birthday", null=True)
+    birth_date = models.DateField("Birthday", null=True,)

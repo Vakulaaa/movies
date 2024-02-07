@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     # Installed
     "rest_framework",
     # Custom
-    "apps.authentication"
+    "apps.authentication",
 ]
 
 MIDDLEWARE = [
@@ -139,3 +139,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # User
 AUTH_USER_MODEL = "authentication.User"
+
+# Movie
+AUTH_MOVIE_MODEL = "authentication.Movie"

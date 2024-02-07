@@ -1,4 +1,4 @@
-.PHONY: setup lint test
+.PHONY: setup test lint run db
 
 setup:
 	pip install -r requirements.txt
@@ -9,9 +9,10 @@ test:
 	pytest -s -v --cov=./ --cov-report term-missing
 
 lint:
-	black .
-	echo "-code is formatted with black"
-	ruff . --fix
-	echo "-code is formatted with ruff"
+	black . && ruff . --fix
+
 run:
 	python manage.py runserver
+
+db:
+	python manage.py migrate

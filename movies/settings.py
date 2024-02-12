@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     # Installed
     "rest_framework",
     # Custom
-    "apps.authentication"
+    "apps.authentication",
+    "apps.films",
 ]
 
 MIDDLEWARE = [

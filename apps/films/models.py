@@ -7,4 +7,4 @@ class Company(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
-    company = models.ForeignKey(Company, on_delete=models.PROTECT, null=True)
+    company = models.ForeignKey(Company, on_delete=models.SET_NULL, null=True)
